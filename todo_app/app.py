@@ -13,6 +13,7 @@ def index():
     return render_template("index.html", items_list = items)
 
 
+
 @app.route('/add-todo', methods = ["POST"])
 def add_todo():
     todo_name = request.form.get('todo-title')
